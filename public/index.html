@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/master.css" />
+    <link rel="stylesheet" href="../src/css/theme.css" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+    <!-- title  -->
+    <title>Home</title>
+  </head>
+  <body>
+    <main class="bgColor-pri">
+      <!-- navigation -->
+      <div class="w-full fixed bgColor-pri t-0 shadow z-10">
+        <header
+          class="lg:w-9/12 h-16 lg:fx fx-j-a fx-i-c color-1 ff-pri m-0-auto"
+        >
+          <div class="fx fx-j-btw fx-i-c h-full">
+            <div class="pl-4 fs-lg lg:fs-xl">
+              <i class="fal fa-shekel-sign"> </i>
+              PhoenixAffil
+            </div>
+
+            <div id="switch_nav" class="lg:hide">
+              <i class="pr-4 fal fa-bars"></i>
+            </div>
+          </div>
+
+          <nav id="nav" class="xs:hide bgColor-pri lg:w-10/12 lg:h-full">
+            <ul
+              id="menu"
+              class="fw-600 lg:fw-bold lg:fx fx-j-a fx-i-c lg:h-full lg:fs-lg pb-5 lg:pb-0 ls-wide"
+            >
+              <li class="pointer py-2 lg:py-0">
+                <a class="no-line color-1" href="/"> Home </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#guide"> How It Works </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#plans"> Plans </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#faq"> FAQs </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#contact"> Contact </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#signin"> Login </a>
+              </li>
+              <li class="pointer py-2 lg:py-0 lg:list-none">
+                <a class="no-line color-1" href="#signup"> Signup </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <!-- onboarding -->
+      <div
+        id="home"
+        class="w-full lg:w-9/12 bgColor-pri mt-16 ff-pri m-0-auto lg:fx"
+      >
+        <div class="w-11/12 lg:w-1/2 pt-10 lg:pt-20 color-1 m-0-auto ls-wide">
+          <h1>PhoenixAffil Leverage the Internet</h1>
+          <p class="py-4 fs-lg fw-400 lh-relaxed">
+            PhoenixAffil is an outstanding Network Marketing platform currently
+            with the best compensation plan, products and services.
+          </p>
+
+          <div class="w-8/12 lg:pt-6 lg:fx fx-j-btw">
+            <a href="signup" class="no-line">
+              <button
+                class="bgColor-sec color-1 fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow hover:bgColor-sec-700"
+                type="button"
+                name="button"
+              >
+                Start Now
+              </button>
+            </a>
+
+            <a href="signin" class="no-line">
+              <button
+                class="bgColor-1 color-sec fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow hover:bgColor-1-700 mt-4 lg:mt-0"
+                type="button"
+                name="button"
+              >
+                Sign In
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-11/12 lg:w-1/2 m-0-auto py-4 lg:pt-0">
+          <img
+            class="w-full h-full cover"
+            src="../src/images/hero.svg"
+            alt="home image"
+          />
+        </div>
+      </div>
+      <!-- services -->
+
+      <h2 class="ff-pri py-4 w-full txt-h-c color-1">Our Services</h2>
+
+      <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
+        <div
+          class="bgColor-1 lg:w-1/5 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2">Affiliate Program</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            By introducing New agents unde your link to the website, you stand
+            high Commissions once they activate their account.
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/5 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-money-bill fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2">Money Transfer</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            We offer Wallet to wallet Money transfer. One Can send or receive
+            money from anyone on the website
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/5 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-credit-card"></i>
+          </div>
+          <h2 class="ls-wide color-2">Shares</h2>
+
+          <p class="pt-2 fs-lg lh-relaxed">
+            As an active agent to the website, you qualify for Quarterly
+            Dividends. The higher the package you purchase, the higher the
+            Quarterly dividends. This is for a lifetime.
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/5 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-credit-card"></i>
+          </div>
+          <h2 class="ls-wide color-2">Residuals</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            Every month there is monthly disbursement of residuals and the more
+            you introduce new affiliates the more your residuals will be.
+          </p>
+        </div>
+      </div>
+
+      <!-- about -->
+
+      <div
+        class="lg:w-9/12 m-0-auto py-4 px-4 ff-pri mb-8 color-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="ls-wide">Who Are We?</h2>
+        <p class="pt-2 fs-lg lh-relaxed fw-400">
+          PHOENIX AFFIL is a trusted registered company. It operates legally and
+          in accordance to the Multilevel Marketing (MLM) industry by providing
+          a wide range of products and services.
+        </p>
+
+        <p class="pt-2 fs-lg lh-relaxed">
+          PHOENIX AFFIL is a platform to which the earning levels are to
+          infinity. Life time package subscription without Renewals. High
+          unlimited Commissions from referrals. Daily Bonuses, weekly, monthly
+          and quarterly rewards. This is the best lifetime compensation plan. We
+          believe in appreciating the society through our investments, connected
+          community and residual income.
+        </p>
+      </div>
+      <!-- guide -->
+
+      <h2 class="ff-pri py-4 w-full txt-h-c color-1">How It work?</h2>
+
+      <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">Register your account</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            Create an account or from a sponsors referal link by providing
+            accurate details on our sign up page.
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">Activate your Account</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            After Registration, you need to activate your account. Select your
+            desired and affordable package. Payments are currently being done
+            through Mpesa. More information is provided down page
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">Enjoy Our Services</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            Access your referral link once you have an active account on the
+            dashboard. Use it to invite new Agents and be commissioned
+            immidiately once they are active. Other products are provided too.
+          </p>
+
+          <a href="summary" class="no-line color-pri fw-bold">
+            <p>Check Summary</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- plans -->
+
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1">Disbursement Plans</h2>
+
+      <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-6 px-4 ml-4 rounded shadow color-2-700 txt-h-c"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4 m-0-auto"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+
+          <h2 class="py-2 color-sec">Silver</h2>
+
+          <h2 class="py-2">Ksh 1200</h2>
+
+          <p class="py-2">Streamline points 100</p>
+
+          <p class="py-2">Affiliate Bonus 264</p>
+
+          <p class="py-2">Matching Bonus 210</p>
+
+          <p class="py-2">Weekly Reward 216</p>
+
+          <p class="py-2">Quarterly Dividends 936</p>
+
+          <button
+            class="bgColor-sec color-1 fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow mt-4 hover:bgColor-sec-700"
+            type="button"
+            name="button"
+          >
+            Start Now
+          </button>
+        </div>
+      </div>
+
+      <!-- faq -->
+
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">How do I earn?</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            By sharing your referral link through out the social media
+            platforms. This helps to reacha wide range of people. Use different
+            forums to get you link promoted.
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">How much do I earn?</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            We have different packages having different amounts. The
+            compensation relies on the package purchased by your client.
+            Personally by being a member you stand residual income and quarterly
+            dividends
+          </p>
+        </div>
+
+        <div
+          class="bgColor-1 lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 px-4 ml-4 rounded shadow color-2-700"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bgColor-2-100 w-16 h-16 fx fx-j-c fx-i-c rounded-full color-pri fw-bold mb-4"
+          >
+            <i class="fa fa-users fs-xl"></i>
+          </div>
+          <h2 class="ls-wide color-2 color-1">When do I get paid?</h2>
+          <p class="pt-2 fs-lg lh-relaxed">
+            There is Daily Bonuses that reflect to your account immidiately
+            after a new agent activates their account. You can withdraw anytime.
+            Rewards are based on weekly, monthly and Quarterly. Minimum amount
+            for Payout is 200. Currently we are operating on Mpesa where
+            disbursement of your withdrawals will be instant. Note that the
+            number you registered to the system is the number that will receive
+            the money.
+          </p>
+        </div>
+      </div>
+
+      <!-- contact -->
+
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1">Contact Information</h2>
+
+      <div class="color-1 ff-pri txt-h-c">
+        <p>
+          Phone:
+          <span class="fw-bold"> +254719352012</span>
+        </p>
+
+        <div class="w-11/12 lg:fx fx-j-c m-0-auto mt-5">
+          <div
+            class="bgColor-1 fx fx-j-btw fx-i-c color-2-600 pointer lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 ml-4 rounded shadow"
+          >
+            <div class="fx pl-5">
+              <i class="fa fa-envelope fa-3x color-3"></i>
+              <div class="pl-4 txt-h-c">
+                <h2 class="color-2 pb-2">Facebook</h2>
+                <h4 class="fw-600">MESSAGING</h4>
+              </div>
+            </div>
+            <i class="fa fa-arrow-right fa-2x pr-5"></i>
+          </div>
+
+          <div
+            class="bgColor-1 fx fx-j-btw fx-i-c color-2-600 pointer lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 ml-4 rounded shadow"
+          >
+            <div class="fx pl-5">
+              <i class="fa fa-envelope fa-3x color-3"></i>
+              <div class="pl-4 txt-h-c">
+                <h2 class="color-2 pb-2">Twitter</h2>
+                <h4 class="fw-600">TWITTER FEED</h4>
+              </div>
+            </div>
+            <i class="fa fa-arrow-right fa-2x pr-5"></i>
+          </div>
+
+          <div
+            class="bgColor-1 fx fx-j-btw fx-i-c color-2-600 pointer lg:w-1/4 w-11/12 mt-2 lg:mt-0 h-auto py-4 ml-4 rounded shadow"
+          >
+            <div class="fx pl-5">
+              <i class="fa fa-envelope fa-3x color-3"></i>
+              <div class="pl-4 txt-h-c">
+                <h2 class="color-2 pb-2">Mail</h2>
+                <h4 class="fw-600">SEND MAIL</h4>
+              </div>
+            </div>
+            <i class="fa fa-arrow-right fa-2x pr-5"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full border-t border-b-0 border-r-0 border-l-0 b-solid b-color-1 h-20 mt-10 fw-bold ff-pri fx fx-j-a fx-i-c color-1"
+      >
+        <p>Copyright @ 2021 PhoenixAffil. All rights reserved.</p>
+        <a href="terms_and_conditions" class="no-line color-1">
+          <p>Terms & Conditions</p>
+        </a>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../src/scripts/main.js"></script>
+  </body>
+</html>
