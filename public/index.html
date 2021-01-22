@@ -38,12 +38,12 @@
         >
           <div class="fx fx-j-btw fx-i-c h-full">
             <div class="pl-4 fs-lg lg:fs-xl">
-              <i class="fal fa-shekel-sign"> </i>
+              <i class="fas fa-shekel-sign"> </i>
               PhoenixAffil
             </div>
 
             <div id="switch_nav" class="lg:hide">
-              <i class="pr-4 fal fa-bars"></i>
+              <i class="pr-4 fas fa-bars"></i>
             </div>
           </div>
 
@@ -53,7 +53,7 @@
               class="fw-600 lg:fw-bold lg:fx fx-j-a fx-i-c lg:h-full lg:fs-lg pb-5 lg:pb-0 ls-wide"
             >
               <li class="pointer py-2 lg:py-0">
-                <a class="no-line color-1" href="/"> Home </a>
+                <a class="no-line color-1" href="#"> Home </a>
               </li>
               <li class="pointer py-2 lg:py-0 lg:list-none">
                 <a class="no-line color-1" href="#guide"> How It Works </a>
@@ -68,10 +68,14 @@
                 <a class="no-line color-1" href="#contact"> Contact </a>
               </li>
               <li class="pointer py-2 lg:py-0 lg:list-none">
-                <a class="no-line color-1" href="#signin"> Login </a>
+                <a class="no-line color-1" href="/public/auth/signin.html">
+                  Login
+                </a>
               </li>
               <li class="pointer py-2 lg:py-0 lg:list-none">
-                <a class="no-line color-1" href="#signup"> Signup </a>
+                <a class="no-line color-1" href="/public/auth/signup.html">
+                  Signup
+                </a>
               </li>
             </ul>
           </nav>
@@ -91,7 +95,7 @@
           </p>
 
           <div class="w-8/12 lg:pt-6 lg:fx fx-j-btw">
-            <a href="signup" class="no-line">
+            <a href="/public/auth/signup.html" class="no-line">
               <button
                 class="bgColor-sec color-1 fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow hover:bgColor-sec-700"
                 type="button"
@@ -101,7 +105,7 @@
               </button>
             </a>
 
-            <a href="signin" class="no-line">
+            <a href="/public/auth/signin.html" class="no-line">
               <button
                 class="bgColor-1 color-sec fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow hover:bgColor-1-700 mt-4 lg:mt-0"
                 type="button"
@@ -222,7 +226,9 @@
       </div>
       <!-- guide -->
 
-      <h2 class="ff-pri py-4 w-full txt-h-c color-1">How It work?</h2>
+      <h2 class="ff-pri py-4 w-full txt-h-c color-1" id="guide">
+        How It work?
+      </h2>
 
       <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
         <div
@@ -277,7 +283,7 @@
             immidiately once they are active. Other products are provided too.
           </p>
 
-          <a href="summary" class="no-line color-pri fw-bold">
+          <a href="public/summary.html" class="no-line color-pri fw-bold">
             <p>Check Summary</p>
           </a>
         </div>
@@ -285,7 +291,9 @@
 
       <!-- plans -->
 
-      <h2 class="ff-pri py-6 w-full txt-h-c color-1">Disbursement Plans</h2>
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1" id="plans">
+        Disbursement Plans
+      </h2>
 
       <div class="bgColor-pri w-full h-auto ff-pri lg:fx fx-j-c py-6 fw-700">
         <div
@@ -303,15 +311,13 @@
 
           <h2 class="py-2">Ksh 1200</h2>
 
-          <p class="py-2">Streamline points 100</p>
+          <p class="py-2 fw-500">Level 1 Ksh.804</p>
 
-          <p class="py-2">Affiliate Bonus 264</p>
+          <p class="py-2 fw-500">Level 2 ksh.204</p>
 
-          <p class="py-2">Matching Bonus 210</p>
+          <p class="py-2 fw-500">Level 3 Ksh.114</p>
 
-          <p class="py-2">Weekly Reward 216</p>
-
-          <p class="py-2">Quarterly Dividends 936</p>
+          <p class="py-2 fw-500">Quarterly Dividends Ksh.960</p>
 
           <button
             class="bgColor-sec color-1 fs-sm py-3 w-40 border-0 rounded fw-bold ff-pri pointer outline-0 shadow mt-4 hover:bgColor-sec-700"
@@ -325,7 +331,7 @@
 
       <!-- faq -->
 
-      <h2 class="ff-pri py-6 w-full txt-h-c color-1">
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1" id="faq">
         Frequently Asked Questions
       </h2>
 
@@ -392,7 +398,9 @@
 
       <!-- contact -->
 
-      <h2 class="ff-pri py-6 w-full txt-h-c color-1">Contact Information</h2>
+      <h2 class="ff-pri py-6 w-full txt-h-c color-1" id="contact">
+        Contact Information
+      </h2>
 
       <div class="color-1 ff-pri txt-h-c">
         <p>
@@ -446,7 +454,7 @@
         class="w-full border-t border-b-0 border-r-0 border-l-0 b-solid b-color-1 h-20 mt-10 fw-bold ff-pri fx fx-j-a fx-i-c color-1"
       >
         <p>Copyright @ 2021 PhoenixAffil. All rights reserved.</p>
-        <a href="terms_and_conditions" class="no-line color-1">
+        <a href="public/terms.html" class="no-line color-1">
           <p>Terms & Conditions</p>
         </a>
       </div>

@@ -6,11 +6,11 @@ $(document).on('click', '#switch_nav', function () {
   if ($('#nav').is(':visible')) {
     $('#nav').fadeOut('slow');
 
-    $(this).html('<i class="pr-4 fal fa-bars"></i>');
+    $(this).html('<i class="pr-4 fa fa-bars"></i>');
   } else {
     $('#nav').fadeIn('slow');
 
-    $(this).html('<i class="pr-4 fal fa-times"></i>');
+    $(this).html('<i class="pr-4 fas fa-times"></i>');
   }
 });
 
@@ -21,6 +21,11 @@ $(document).on('mouseenter', '#menu li', function () {
 $(document).on('mouseleave ', '#menu li', function () {
   $(this).addClass('md:list-none');
 });
+
+$(document).on('click', 'html', function () {
+  $(this).css({ 'scroll-behavior': 'smooth' });
+});
+
 // load headers
 $(function () {
   $('#header').load('header.html');
