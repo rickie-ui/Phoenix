@@ -1,82 +1,109 @@
 <div
   id="menu"
-  class="bgColor-1 shadow md:w-40 w-64 h-screen fixed xs:hide z-50"
+  class="bgColor-pri md:w-2/12 h-screen fixed t-0 l-0 w-0 md:duration-300 duration-100 z-50 flow-hidden"
 >
-  <div id="close_menu" class="w-full fx fx-j-e fx-i-c lg:hide">
-    <i class="fas fa-times pr-4"></i>
+  <div class="fx fx-j-btw fx-i-c h-16 fs-xl">
+    <div class="pl-2 lg:fs-xl color-1 fw-500 fx fx-i-c">
+      <img
+        class="h-10 w-10 rounded mr-2"
+        src="../../src/images/logo.jpg"
+        alt="Logo"
+      />
+      <div class="fx-j-e">PhoenixAffil</div>
+    </div>
+
+    <div class="w-full fx fx-j-e fx-i-c lg:hide absolute t-6 color-1">
+      <i class="fa fa-times pr-4 py-1" onclick="closeNav()"></i>
+    </div>
   </div>
 
-  <div class="w-9/12 h-auto m-0-auto color-pri py-2 fw-600">
-    <div class="py-3">
-      <a href="/public/client/overview.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Overview
-      </a>
+  <div class="w-full h-auto fw-600 fs-sm md:fs-md">
+    <a
+      href="/public/client/overview.html"
+      id="open"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Overview</a
+    >
+
+    <a
+      href="/public/client/withdraw.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Withdraw
+    </a>
+
+    <a
+      href="/public/client/deposit.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Deposit
+    </a>
+
+    <a
+      href="/public/client/transactions.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Transactions
+    </a>
+
+    <a
+      href="/public/client/network.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> My Network
+    </a>
+
+    <a
+      href="/public/client/sponsor.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Pay for Client
+    </a>
+
+    <a
+      href="/public/client/sendmoney.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Send Money
+    </a>
+
+    <a
+      href="/public/client/pledge.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Pledge
+    </a>
+
+    <div class="py-3 px-1 hover:bgColor-2-500 pointer color-1" id="dropdown">
+      <i class="fa fa-home"></i> Aadypex(ACN)
+    </div>
+    <div class="bgColor-2-800 hide" id="accordion">
+      <a
+        href="/public/client/trade.html"
+        class="py-3 px-4 hover:bgColor-sec-800 transition duration-700 ease-in-out color-1 no-line block"
+        ><i class="fa fa-home"></i> Trade Coin</a
+      >
+      <a
+        href="/public/client/investments.html"
+        class="py-3 px-4 hover:bgColor-sec-800 transition duration-700 ease-in-out color-1 no-line block"
+      >
+        <i class="fa fa-home"></i> Investments(Coming soon)</a
+      >
     </div>
 
-    <div class="py-3">
-      <a href="/public/client/withdraw.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Withdraw
-      </a>
-    </div>
+    <a
+      href="/public/client/contact.html"
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Contact Us
+    </a>
 
-    <div class="py-3">
-      <a href="/public/client/deposit.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Deposit
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/transactions.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Transactions
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/network.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> My Network
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/sponsor.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Pay for Client
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/sendmoney.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Send Money
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/upgrade.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Upgrade
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="/public/client/pledge.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Pledge
-      </a>
-    </div>
-
-    <!-- <div class="py-3">
-      <a href="/public/client/blog.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Blog
-      </a>
-    </div> -->
-
-    <div class="py-3">
-      <a href="/public/client/contact.html" class="color-pri no-line">
-        <i class="fa fa-home"></i> Contact Us
-      </a>
-    </div>
-
-    <div class="py-3">
-      <a href="" class="color-danger no-line">
-        <i class="fa fa-home"></i> Logout
-      </a>
-    </div>
+    <a
+      href=""
+      class="py-3 px-1 hover:bgColor-2-500 pointer transition duration-700 ease-in-out color-1 no-line block"
+    >
+      <i class="fa fa-home"></i> Logout
+    </a>
   </div>
 </div>

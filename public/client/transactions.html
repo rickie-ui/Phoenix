@@ -4,10 +4,16 @@
     <!-- meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../src/images/logo.jpg" type="image/x-icon" />
 
     <!-- css -->
     <link rel="stylesheet" href="../../src/css/master.css" />
     <link rel="stylesheet" href="../../src/css/theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css"
+    />
 
     <!-- icons -->
     <link
@@ -24,7 +30,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
 
     <!-- title  -->
     <title>Transaction</title>
@@ -34,48 +40,44 @@
       <div id="header"></div>
       <div id="menu_bar"></div>
 
-      <div class="bgColor-1 h-auto w-full mt-12 md:pl-40 lg:pl-32 py-5">
+      <div
+        class="bgColor-1 h-auto md:w-10/12 w-full mt-12 md:pl-40 lg:pl-32 py-5 fr"
+      >
         <div
           class="bgColor-1 w-full lg:w-11/12 m-0-auto h-auto shandow flow-auto py-4"
         >
           <h4 class="w-full py-2 color-pri txt-h-c">My Transactions</h4>
 
-          <table class="table-auto border-collapse bgColor-trans m-0-auto">
-            <thead class="txt-h-c">
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <th class="px-4 py-2 color-2-700">Status</th>
-                <th class="px-4 py-2 color-2-700">Amount</th>
-                <th class="px-4 py-2 color-2-700">Purpose</th>
-                <th class="px-4 py-2 color-2-700">Date/Time</th>
+          <table class="row-border stripe hover" id="transactions">
+            <thead>
+              <tr>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Purpose</th>
+                <th>Date/Time</th>
               </tr>
             </thead>
 
             <tbody>
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">Mijvhd456</td>
-                <td class="px-4 py-1 color-2-600 border-0">Ksh 5,000</td>
-                <td class="px-4 py-1 color-2-600 border-0">withdrawn</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  2012-03-24 17:45:12
-                </td>
+              <tr>
+                <td>Ksh 5,000</td>
+                <td>Complete</td>
+                <td>withdrawn</td>
+                <td>2012-03-24 17:45:12</td>
               </tr>
 
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">osano788</td>
-                <td class="px-4 py-1 color-2-600 border-0">Ksh 7,000</td>
-                <td class="px-4 py-1 color-2-600 border-0">sent</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  2012-03-24 17:45:12
-                </td>
+              <tr>
+                <td>Ksh 7,000</td>
+                <td>Complete</td>
+                <td>sent</td>
+                <td>2012-03-24 17:45:12</td>
               </tr>
 
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">Silver</td>
-                <td class="px-4 py-1 color-2-600 border-0">Ksh 5,000</td>
-                <td class="px-4 py-1 color-2-600 border-0">Upgrade</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  2012-03-24 17:45:12
-                </td>
+              <tr>
+                <td>Ksh 5,000</td>
+                <td>Pending</td>
+                <td>deposit</td>
+                <td>2012-03-24 17:45:12</td>
               </tr>
             </tbody>
           </table>

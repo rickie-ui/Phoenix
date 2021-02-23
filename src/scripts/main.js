@@ -32,11 +32,27 @@ $(function () {
   $('#custom_header').load('custom_header.html');
   $('#menu_bar').load('menu.html');
 });
-//overview
-$(document).on('click', '#open_menu', function () {
-  $('#menu').show('slow');
-});
+//New menu
+function openNav() {
+  document.getElementById('menu').style.width = '300px';
+}
 
-$(document).on('click', '#close_menu', function () {
-  $('#menu').hide('slow');
+function closeNav() {
+  document.getElementById('menu').style.width = '0';
+  document.getElementById('menu').style.width = '';
+}
+//accordion
+$(document).on('click', '#dropdown', function () {
+  $('#accordion').toggle('slow');
+});
+//data tables
+$(document).ready(function () {
+  $('#level_1,#level_2, #level_3,#pledges,#transactions').DataTable({
+    columnDefs: [
+      {
+        targets: '_all',
+        className: 'dt-head-left',
+      },
+    ],
+  });
 });

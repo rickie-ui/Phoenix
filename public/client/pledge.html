@@ -4,6 +4,7 @@
     <!-- meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../src/images/logo.jpg" type="image/x-icon" />
 
     <!-- css -->
     <link rel="stylesheet" href="../../src/css/master.css" />
@@ -13,6 +14,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css"
     />
 
     <!-- Jquery -->
@@ -24,8 +30,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
     <!-- title  -->
     <title>Pledge</title>
   </head>
@@ -41,7 +46,7 @@
           </div>
 
           <form
-            class="w-11/12 lg:w-1/2 m-0-auto"
+            class="w-11/12 lg:w-1/2 m-0-auto mb-16"
             action="index.html"
             method="post"
           >
@@ -61,57 +66,46 @@
             </button>
           </form>
 
-          <table
-            class="table-auto border-collapse bgColor-trans m-0-auto w-full lg:w-11/12 flow-auto block mt-20"
-          >
-            <thead class="txt-h-l">
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <th class="px-4 py-2 color-2-700">Amount Pledged</th>
-                <th class="px-4 py-2 color-2-700">Profit/Loss</th>
-                <th class="px-4 py-2 color-2-700">Status</th>
-                <th class="px-4 py-2 color-2-700">Date/Time Pledged</th>
-                <th class="px-4 py-2 color-2-700">Date/Time Profited</th>
-              </tr>
-            </thead>
+          <!-- Pledge data table -->
+          <div class="w-full lg:w-11/12 m-0-auto h-auto shandow flow-auto py-4">
+            <table class="row-border stripe hover" id="pledges">
+              <thead>
+                <tr>
+                  <th>Amount Pledged</th>
+                  <th>Profit/Loss</th>
+                  <th>Status</th>
+                  <th>Date/Time Pledged</th>
+                  <th>Date/Time Profited</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">Ksh.4000</td>
-                <td class="px-4 py-1 color-success border-0">Ksh.1500</td>
-                <td class="px-4 py-1 color-2-600 border-0 fw-bold">Complete</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  24-03-2020 17:45:12
-                </td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  25-03-2020 17:45:12
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Ksh.4000</td>
+                  <td>Ksh.1500</td>
+                  <td>Complete</td>
+                  <td>24-03-2020 17:45:12</td>
+                  <td>25-03-2020 17:45:12</td>
+                </tr>
 
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">Ksh.6000</td>
-                <td class="px-4 py-1 color-success border-0">Ksh.3000</td>
-                <td class="px-4 py-1 color-2-600 border-0 fw-bold">Complete</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  24-03-2020 17:45:12
-                </td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  25-03-2020 17:45:12
-                </td>
-              </tr>
+                <tr>
+                  <td>Ksh.6000</td>
+                  <td>Ksh.3000</td>
+                  <td>Complete</td>
+                  <td>24-03-2020 17:45:12</td>
+                  <td>25-03-2020 17:45:12</td>
+                </tr>
 
-              <tr class="bgColor-1 border-8 b-solid b-color-1">
-                <td class="px-4 py-1 color-2-600 border-0">Ksh.5000</td>
-                <td class="px-4 py-1 color-danger border-0">Ksh.2000</td>
-                <td class="px-4 py-1 color-2-600 border-0 fw-bold">Pending</td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  24-03-2020 17:45:12
-                </td>
-                <td class="px-4 py-1 color-2-600 border-0">
-                  25-03-2020 17:45:12
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <td>Ksh.5000</td>
+                  <td>Ksh.2000</td>
+                  <td>Pending</td>
+                  <td>24-03-2020 17:45:12</td>
+                  <td>25-03-2020 17:45:12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
